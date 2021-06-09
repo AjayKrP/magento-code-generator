@@ -1,0 +1,13 @@
+<?php
+/**
+ * Literacis Software.
+ *
+ * @package   Literacis_CodeGenerator
+ * @author    Mahesh Singh
+ */
+
+// $block %block%
+
+?>
+
+<?= $block->getHelloMessage(); ?>

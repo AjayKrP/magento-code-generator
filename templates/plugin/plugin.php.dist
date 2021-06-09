@@ -1,0 +1,24 @@
+<?php
+/**
+ * Literacis Software.
+ *
+ * @category   Literacis
+ * @package    %module_name%
+ * @author     Literacis
+ * @copyright  Copyright (c) Literacis Software Private Limited (https://Literacis.com)
+ * @license    https://store.Literacis.com/license.html
+ */
+
+namespace %namespace%\Plugin;
+
+/**
+ * Plugin class.
+ */
+class %plugin_name%
+{
+    public function __construct(
+
+    ) {
+
+    }
+}

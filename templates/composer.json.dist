@@ -1,0 +1,21 @@
+{
+    "name": "%vendor%/module-%composerName%",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "ajay@literacis.com",
+            "name": "Ajay K"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "%moduleName%": ""
+        }
+    }
+}

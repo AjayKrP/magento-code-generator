@@ -1,0 +1,48 @@
+<?php
+/**
+ * Literacis Software.
+ *
+ * @category  Literacis
+ * @package   %module_name%
+ * @author    Literacis
+ * @copyright Copyright (c) Literacis Software Private Limited (https://Literacis.com)
+ * @license   https://store.Literacis.com/license.html
+ */
+namespace %namespace%;
+
+use Magento\Framework\App\Action\Action;
+use Magento\Framework\App\Action\Context;
+use Magento\Framework\View\Result\PageFactory;
+
+class %class_name% extends Action
+{
+    /**
+     * @var PageFactory
+     */
+    protected $_resultPageFactory;
+
+    /**
+     * initialization
+     *
+     * @param Context $context
+     * @param PageFactory $resultPageFactory
+     */
+    public function __construct(
+        Context $context,
+        PageFactory $resultPageFactory
+    ) {
+        $this->_resultPageFactory = $resultPageFactory;
+        parent::__construct($context);
+    }
+
+    public function execute()
+    {
+        $resultPage = $this->_resultPageFactory->create();
+        $pageLabel = "";
+        $resultPage->getConfig()->getTitle()->set(__());
+        $layout = $resultPage->getLayout();
+
+        return $resultPage;
+
+    }
+}
